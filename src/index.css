@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #FAFBFD;
+  font-family: 'Roboto', system-ui;
+}
+
+@layer base {
+
+
+  :root {
+    --background: 216 100% 95%;
+    --foreground: 216 5% 0%;
+    --card: 216 50% 90%;
+    --card-foreground: 216 5% 10%;
+    --popover: 216 100% 95%;
+    --popover-foreground: 216 100% 0%;
+    --primary: 216 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 216 30% 70%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 178 30% 85%;
+    --muted-foreground: 216 5% 35%;
+    --accent: 178 30% 80%;
+    --accent-foreground: 216 5% 10%;
+    --destructive: 0 100% 30%;
+    --destructive-foreground: 216 5% 90%;
+    --border: 0 0% 89.8%;
+    --input: 216 30% 18%;
+    --ring: 216 100% 50%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 216 50% 5%;
+    --foreground: 216 5% 90%;
+    --card: 216 50% 0%;
+    --card-foreground: 216 5% 90%;
+    --popover: 216 50% 5%;
+    --popover-foreground: 216 5% 90%;
+    --primary: 216 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 216 30% 10%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 178 30% 15%;
+    --muted-foreground: 216 5% 60%;
+    --accent: 178 30% 15%;
+    --accent-foreground: 216 5% 90%;
+    --destructive: 0 100% 30%;
+    --destructive-foreground: 216 5% 90%;
+    --border: 0 0% 89.8%;
+    --input: 216 30% 18%;
+    --ring: 216 100% 50%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
