@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import { Toaster } from 'sonner';
 import './index.css';
+import './fonts.css';
 import Home from './routes/home.tsx';
 import Invoice from './routes/invoice.tsx';
 import People from './routes/people.tsx';

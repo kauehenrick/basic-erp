@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/accordion";
 import { useSidebarStore } from "@/stores/SidebarStore";
 import { PiBarcodeLight, PiCirclesThreePlusLight, PiGearLight, PiHouseLight, PiInvoiceLight, PiNewspaperClippingLight, PiUserLight } from "react-icons/pi";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.webp";
 import MenuOption from "../ui/menu-option";
 
 export default function Sidebar() {
